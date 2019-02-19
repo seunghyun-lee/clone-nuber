@@ -59,6 +59,9 @@ typings/
 
 # next.js build output
 .next
+<<<<<<< HEAD
 .DS_Store
 dist
 .env.production
+=======
+>>>>>>> d7d54c770220e0a78333fe56c360e6f59eb23210
