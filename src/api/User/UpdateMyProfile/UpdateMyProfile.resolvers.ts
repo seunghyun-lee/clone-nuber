@@ -4,6 +4,7 @@ import {
     UpdateMyProfileResponse
 } from "../../../types/graph";
 import { Resolvers } from "../../../types/resolvers";
+import cleanNullArgs from "../../../utils/cleanNullArgs";
 import privateResolver from "../../../utils/privateResolver";
 
 const resolvers: Resolvers = {
@@ -15,18 +16,13 @@ const resolvers: Resolvers = {
                 { req }
                 ) : Promise<UpdateMyProfileResponse> => {
                 const user: User = req.user;
-                await User.update({ id: user.id }, { ...args });
-                const notNull = {};
-                Object.keys(args).forEach(key => {
-                    if (args[key] != null) {
-                        notNull[key] = args[key];
-                    }
-                });
+                const notNull:any = cleanNullArgs(args);
+                if (notNull.password) {
+                    user.password = notNull.password;
+                    user.save();
+                    delete notNull.password;
+                }
                 try {
-                    if (args.password !== null) {
-                        user.password = args.password;
-                        user.save();
-                    }
                     await User.update({ id: user.id }, {...notNull});
                     return {
                         ok: true,
