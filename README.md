@@ -22,8 +22,8 @@ Server for the Nuber Clone learning from Nomad Academy. GraphQL, Typescript, Nod
     - [x] Get my Profile
     - [x] Request Email Verification
     - [x] Complete Email Verification
-    - [ ] Update my Profile
-    - [ ] Toggle Driving Mode
+    - [x] Update my Profile
+    - [x] Toggle Driving Mode
     - [ ] Delete Place
     - [ ] See Nearby Drivers
     - [ ] Subscribe to Nearby Drivers
