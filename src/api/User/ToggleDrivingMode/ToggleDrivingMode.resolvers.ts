@@ -1,7 +1,7 @@
 import User from "../../../entities/User";
 import { Resolvers } from "../../../types/resolvers";
 import privateResolver from "../../../utils/privateResolver";
-import { ToggleDrivingModeRespons } from "../../../types/graph";
+import { ToggleDrivingModeResponse } from "../../../types/graph";
 
 const resolvers: Resolvers = {
     Mutation: {
