@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Server for the nuber clone study on Nomad Academy. GraphQL, Typescript, NodeJS",
   "main": "index.js",
-  "repository": "https://github.com/seunghyun-lee/nuber-server",
+  "repository": "https://github.com/seunghyun-lee/clone-nuber",
   "author": "Seunghyun Lee <seunghyunleekr@gmail.com>",
   "license": "MIT",
   "devDependencies": {
