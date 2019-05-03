@@ -1,0 +1,9 @@
+type GetMyPlacesResolvers {
+    ok: Boolean!,
+    error: String
+    places: [Place]
+}
+
+type Query {
+   GetMyPlacesResolvers! 
+}
