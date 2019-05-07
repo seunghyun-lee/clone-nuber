@@ -9,7 +9,7 @@ import privateResolver from "../../../utils/privateResolver";
 
 const resolvers: Resolvers = {
     Mutation: {
-        deletePlace: privateResolver(
+        DeletePlace: privateResolver(
             async (
                 _,
                 args: DeletePlaceMutationArgs,

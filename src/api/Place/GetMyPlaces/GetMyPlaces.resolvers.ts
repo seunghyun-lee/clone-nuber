@@ -14,8 +14,8 @@ const resolvers: Resolvers = {
                     );
                     if (user) {
                         return {
-                            ok: true,
-                            places: user.places,
+                            ok: true,                            
+                            places: null,
                             error: null
                         };
                     } else {
@@ -28,8 +28,8 @@ const resolvers: Resolvers = {
                 } catch(error) {
                     return {
                         ok: false,
-                        places: null,
-                        error: error.message                        
+                        error: error.message,
+                        places: null                                      
                     };
                 }
             }
