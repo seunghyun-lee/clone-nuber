@@ -4,9 +4,18 @@ type EditPlaceResponse {
 }
 
 type Mutation {
+<<<<<<< Updated upstream
     EditPlace(
         placeId: Int!,
         name: String,
         isFav: Boolean
+=======
+    EditPlace (
+        name: String!
+        lat: Float!
+        lng: Float!
+        address: String!
+        isFav: Boolean!
+>>>>>>> Stashed changes
     ): EditPlaceResponse!
 }

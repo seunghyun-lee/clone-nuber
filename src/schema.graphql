@@ -22,8 +22,15 @@ type AddPlaceResponse {
 
 type Mutation {
   AddPlace(name: String!, lat: Float!, lng: Float!, address: String!, isFav: Boolean!): AddPlaceResponse!
+<<<<<<< HEAD
   DeletePlace(placeId: Int!): DeletePlaceResponse!
+=======
+<<<<<<< Updated upstream
+>>>>>>> c9221008c09f13f3b4c7de2dde340b71eebf8a03
   EditPlace(placeId: Int!, name: String, isFav: Boolean): EditPlaceResponse!
+=======
+  EditPlace(name: String!, lat: Float!, lng: Float!, address: String!, isFav: Boolean!): EditPlaceResponse!
+>>>>>>> Stashed changes
   CompleteEmailVerification(key: String!): CompleteEmailVerificationResponse!
   CompletePhoneVerification(phoneNumber: String!, key: String!): CompletePhoneVerificationResponse!
   EmailSignIn(email: String!, password: String!): EmailSignInResponse!
@@ -163,7 +170,7 @@ type User {
   message: [Message]
   ridesAsPassenger: [Ride]
   rideAsDriver: [Ride]
-  place: [Place]
+  places: [Place]
   createdAt: String!
   updatedAt: String
 }
