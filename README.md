@@ -28,7 +28,8 @@ Server for the Nuber Clone learning from Nomad Academy. GraphQL, Typescript, Nod
     - [x] Add Place
     - [x] Edit Place
     - [x] Delete Place
-    - [ ] See Nearby Drivers
+    - [x] Get My Places
+    - [x] See Nearby Drivers
     - [ ] Subscribe to Nearby Drivers
     - [ ] Request a Ride
     - [ ] Get Nearby Ride Requests
