@@ -12,10 +12,12 @@ const resolvers: Resolvers = {
                         { id: req.user.id },
                         { relations: ["places"] }
                     );
+                    
                     if (user) {
                         return {
                             ok: true,                            
-                            places: user.places,
+                            //places: user.places,
+                            places: req.user.places,
                             error: null
                         };
                     } else {
