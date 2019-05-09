@@ -16,7 +16,6 @@ const resolvers: Resolvers = {
                     if (user) {
                         return {
                             ok: true,                            
-                            //places: user.places,
                             places: req.user.places,
                             error: null
                         };

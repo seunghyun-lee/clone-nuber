@@ -23,14 +23,14 @@ const BCRYPT_ROUND = 10;
 class User extends BaseEntity {
     @PrimaryGeneratedColumn() id: number;
 
-    @Column({ type: "text", nullable: true})
+    @Column({ type: "text", nullable: true })
     @IsEmail()
     email: string | null;
 
-    @Column({ type: "boolean", default: false})
+    @Column({ type: "boolean", default: false })
     verifiedEmail: boolean;
 
-    @Column({ type: "text"})
+    @Column({ type: "text" })
     firstName: string;
 
     @Column({ type: "text" })
@@ -51,13 +51,13 @@ class User extends BaseEntity {
     @Column({ type: "text" })
     profilePhoto: string;
 
-    @Column({ type: "boolean", default: false})
+    @Column({ type: "boolean", default: false })
     isDriving: boolean;
 
-    @Column({ type: "boolean", default: false})
+    @Column({ type: "boolean", default: false })
     isRiding: boolean;
 
-    @Column({ type: "boolean", default: false})
+    @Column({ type: "boolean", default: false })
     isTaken: boolean;
 
     @Column({ type: "double precision", default: 0 })    
@@ -95,7 +95,7 @@ class User extends BaseEntity {
     }
 
     public comparePassword(password: string): Promise<boolean> {
-            return bcrypt.compare(password, this.password);
+        return bcrypt.compare(password, this.password);
     }
     
     @BeforeInsert()
