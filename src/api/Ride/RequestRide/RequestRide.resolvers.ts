@@ -1,4 +1,4 @@
-// import Ride from "../../../entities/Ride";
+import Ride from "../../../entities/Ride";
 import User from "../../../entities/User";
 import { 
     RequestRideMutationArgs,
@@ -13,12 +13,13 @@ const resolvers: Resolvers = {
             async (
                 _, 
                 args: RequestRideMutationArgs,
-                { req }
+                { req, pubSub }
             ): Promise<RequestRideResponse> => {
                 const user: User = req.user;
                 console.log(user);
                 try {
-                    // const ride = await Ride.create({ ...args, passenger: user }).save();
+                    const ride = await Ride.create({ ...args, passenger: user }).save();
+                    pubSub.publish("rideRequest", { NearbyRideSubscription: ride });
                     return {
                         ok: true,
                         error: null,
