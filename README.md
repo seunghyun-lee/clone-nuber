@@ -34,6 +34,7 @@ Server for the Nuber Clone learning from Nomad Academy. GraphQL, Typescript, Nod
     - [x] Request a Ride
     - [x] Get Nearby Ride Requests
     - [x] Subscribe to Nearby Ride Request
+    - [ ] Update Ride Status
     - [ ] Subscribr to Ride Status
     - [ ] Get Chat Room Messages
     - [ ] Subscribe to Chat Room Messages
