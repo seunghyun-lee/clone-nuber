@@ -15,11 +15,12 @@ type Query {
 
 type Chat {
   id: Int!
-  message: [Message]
+  messages: [Message]
   passengerId: Int!
   passenger: User
   driverId: Int
   driver: User!
+  ride: Ride!
   createdAt: String!
   updatedAt: String!
 }
@@ -128,6 +129,7 @@ type Ride {
   driver: User!
   passengerId: Int!
   passenger: User!
+  chat: Chat
   createdAt: String!
   updatedAt: String
 }
@@ -215,9 +217,9 @@ type User {
   lastLat: Float
   lastOrientation: Float
   fbId: String
-  message: [Message]
+  messages: [Message]
   ridesAsPassenger: [Ride]
-  rideAsDriver: [Ride]
+  ridesAsDriver: [Ride]
   chatsAsDriver: [Chat]
   chatsAsPassenger: [Chat]
   places: [Place]
