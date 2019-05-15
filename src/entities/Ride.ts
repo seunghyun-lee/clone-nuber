@@ -62,7 +62,7 @@ class Ride extends BaseEntity {
     chatId: number;
 
     @OneToOne(type => Chat, chat => chat.ride, { nullable: true })
-    @JoinColumn
+    @JoinColumn()
     chat: Chat;
 
     @Column({ nullable: true })
