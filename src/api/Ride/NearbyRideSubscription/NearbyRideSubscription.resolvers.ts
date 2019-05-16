@@ -3,7 +3,7 @@ import User from "../../../entities/User";
 
 const resolvers = {
     Subscription: {
-        NearbyRideSubsctiption: {
+        NearbyRideSubscription: {
             subscribe: withFilter(
                 (_, __, { pubSub }) => pubSub.asyncIterator("rideRequest"),
                 (payload, _, { context }) => {
