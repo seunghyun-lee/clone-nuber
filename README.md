@@ -40,7 +40,7 @@ Server for the Nuber Clone learning from Nomad Academy. GraphQL, Typescript, Nod
     - [x] Create a chat room
     - [x] Get Chat Room Messages
     - [x] Send a chat Message
-    - [ ] Subscribe to Chat Room Messages
+    - [x] Subscribe to Chat Room Messages
     
 ## Code Challenge
 

@@ -20,7 +20,7 @@ class Message extends BaseEntity {
 
     @Column({ nullable: true })
     chatId: number;
-    
+
     @ManyToOne(type => Chat, chat => chat.messages)
     chat: Chat;
 
