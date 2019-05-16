@@ -37,11 +37,11 @@ Server for the Nuber Clone learning from Nomad Academy. GraphQL, Typescript, Nod
     - [x] Update Ride Status
     - [x] Get Ride
     - [x] Subscribe to Ride Status
-    - [ ] Create a chat room
-    - [ ] Get Chat Room Messages
+    - [x] Create a chat room
+    - [x] Get Chat Room Messages
+    - [x] Send a chat Message
     - [ ] Subscribe to Chat Room Messages
-    - [ ] Send a chat Message
-
+    
 ## Code Challenge
 
     - [ ] Get Ride History
