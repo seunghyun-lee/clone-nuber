@@ -37,7 +37,7 @@
     "start": "cd dist && node ."
   },
   "dependencies": {
-    "bcrypt": "^3.0.3",
+    "bcrypt": "^5.0.0",
     "class-validator": "^0.9.1",
     "cors": "^2.8.5",
     "eslint-config-airbnb": "^17.1.0",
